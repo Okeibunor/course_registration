@@ -1,5 +1,3 @@
-
-
 add_course = document.querySelector('#add_course');
 add_course.addEventListener('click',(event)=>{
   event.preventDefault();
@@ -8,11 +6,11 @@ add_course.addEventListener('click',(event)=>{
     <div class="form-group col-10">
     <select name="courses" id="courses" class="form-control courses">
       <option value="null">--Select Course--</option>
-      <option value="mathematics">Mathematics</option>
-      <option value="english">English</option>
-      <option value="physics">Physics</option>
-      <option value="biology">Biology</option>
-      <option value="chemistry">Chemistry</option>
+      <option value="Mathematics">Mathematics</option>
+      <option value="English">English</option>
+      <option value="Physics">Physics</option>
+      <option value="Biology">Biology</option>
+      <option value="Chemistry">Chemistry</option>
     </select>
     </div>
     <div class="form-group col-2">
@@ -22,6 +20,7 @@ add_course.addEventListener('click',(event)=>{
   `;
   bottom = document.querySelector("#add_button");
   div = document.createElement('div');
+  div.className = "laj"
   div.innerHTML = template;
   document.querySelector("form").insertBefore(div,bottom);
 });
@@ -48,8 +47,25 @@ document.querySelector("#submit").addEventListener('click',(event)=>{
       <td>${student_name}</td>
       <td>${student_id}</td>
       <td>${course_array}</td>
-      <td>${new Date()}</td>
+      <td>${(new Date())}</td>
     </tr>
   `;
   document.getElementById("container").insertAdjacentHTML("beforeend",table_template);
+
+  clearAll();
 });
+
+document.getElementById("clear_all").addEventListener('click',(event)=>{
+  event.preventDefault();
+  clearAll();
+  
+});
+
+function clearAll(){
+  document.getElementById("student_name").value= "";
+  document.getElementById("student_id").value= "";
+  lajall = document.querySelectorAll(".laj");
+  lajall.forEach(element => {
+    element.remove();
+  });
+}
