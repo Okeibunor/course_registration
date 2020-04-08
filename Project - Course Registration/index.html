@@ -9,8 +9,63 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  
-  
+  <div class="container-fluid bg-light">
+    <div class="row">
+      <div class="col-md-10 col-sm-11 col-lg-7 mx-auto my-5 p-4 shadow bg-white">
+        <form action="">
+          <h4>--Course Registration Form--</h4>
+          <div class="form-group">
+            <input type="text" class="form-control" id="student_name" name="student_name" placeholder="Student Name">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="student_id" name="student_id" placeholder="Student Id">
+          </div>
+          <hr>
+          <h5>Courses</h5><br>
+          <div id="add_button" class="form-group">
+            <button id="add_course" class="btn btn-secondary">Add Course </button>
+          </div>
+          <hr>
+          <div class="form-group my-3">
+            <button id="submit" class="btn btn-primary btn-block">SUBMIT</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid bg-white shadow">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Student Name</th>
+          <th scope="col">Student Id</th>
+          <th scope="col">Courses</th>
+          <th scope="col">Date Added</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/app.js"></script>
 </body>
