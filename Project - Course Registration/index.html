@@ -15,10 +15,10 @@
         <form action="">
           <h4>Course Registration Form</h4>
           <div class="form-group">
-            <input type="text" class="form-control" id="student_name" name="student_name" placeholder="Student Name">
+            <input type="text" class="form-control" id="student_name" name="student_name" placeholder="Student Name" required>
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" id="student_id" name="student_id" placeholder="Student Id">
+            <input type="text" class="form-control" id="student_id" name="student_id" placeholder="Student Id" required>
           </div>
           <hr>
           <h5>Courses</h5><br>
@@ -37,19 +37,23 @@
     </div>
   </div>
 
-  <div class="container-fluid bg-white">
-    <table class="table table-striped bg-white">
-      <thead>
-        <tr>
-          <th scope="col">Student Name</th>
-          <th scope="col">Student Id</th>
-          <th scope="col">Courses</th>
-          <th scope="col">Date Added</th>
-        </tr>
-      </thead>
-      <tbody id="container">
-      </tbody>
-    </table>
+  <div class="container-fluid bg-light">
+    <div class="row">
+      <div class="col-sm-12 col md-10 col-lg-10 mx-auto">
+        <table class="table table-striped bg-white shadow-sm table-responsive-sm">
+          <thead>
+            <tr>
+              <th scope="col">Student Name</th>
+              <th scope="col">Student Id</th>
+              <th scope="col">Courses</th>
+              <th scope="col">Date Added</th>
+            </tr>
+          </thead>
+          <tbody id="container">
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/app.js"></script>
