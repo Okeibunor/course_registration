@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <title>Book List</title>
+</head>
+<body>
+  <body class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 mx-auto">
+          <div id="cardMain"class="card card-body text-left mt-2">
+            <h2 id = "headingMain" class="heading display-5">Add Book</h2>
+            <hr>
+            <div class="form-group">
+              <label for="book-title">Book Title</label>
+              <input type="text" class="form-control" id="book-title" aria-describedby="bookTitle">
+            </div>
+            <div class="form-group">
+              <label for="author">Author</label>
+              <input id="author" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="isbn">ISBN</label>
+              <input id="isbn" type="text" class="form-control" aria-label="Years">
+            </div>
+            <div class="form-group">
+              <input id="submit" type="submit" value="SUBMIT" class="btn btn-dark" style="text-align: left;">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="agreeTC">
+              <label class="form-check-label" for="exampleCheck1">I have read and agreed to the <a href="#">Terms and Conditions</a>.</label>
+            </div>
+            <!--Book List Table -->
+            <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Book Title</th>
+                  <th scope="col">Author</th>
+                  <th scope="col">ISBN</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody id="table-body">
+                <tr>
+                  <td>The Beast</td>
+                  <td>Oriahi Great</td>
+                  <td>444-439-2877</td>
+                  <td><button type="button" class="close" aria-label="Close" >
+                    <span aria-hidden="true" style="color: red;" class="close-button">&times;</span>
+                  </button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>  
+        </div>
+      </div>
+    </div>
+
+  <script src="js/bootstrap.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

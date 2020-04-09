@@ -12,11 +12,13 @@ app.get('port') + '; press Ctrl-C to terminate.' );
 //basic routing 
 app.get('/',(req,res)=>{
   res.type('text/plain');
+  res.status(200);
   res.send('Homepage running...');
 });
 
 app.get('/about',(req,res)=>{
   res.type('text/plain');
+  res.status(200);
   res.send('About page running...');
 });
 
